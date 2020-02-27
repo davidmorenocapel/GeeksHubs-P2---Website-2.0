@@ -1,0 +1,22 @@
+#head{
+   background: url("img/foto1.jpg");
+   background-size: contain;
+}
+#seccion{
+    background-image: url(img/foto2.jpg);
+}
+#footer{
+    background-image: url(img/foto3.jpg);
+}
+
+.dvd{
+    background-color: lawngreen;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+h1{
+    color: hotpink;
+    /* text-align: center; */
+}
