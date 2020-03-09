@@ -1,73 +1,312 @@
-.p1{    
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Krona+One&display=swap');
+
+
+@keyframes bajar-subir {
+    0% {
+        transform: translateY(20px);
+    }
+
+    25% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+/*Clases FullPage.js*/
+#fp-nav ul li a span {
+    background: orange;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: orange;
+}
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top: 90%;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 80%;
+    border-width: 20% 20% 20% 0;
+    border-color: transparent orange transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+    right: 50px;
+    border-width: 20% 0 20% 20%;
+    border-color: transparent transparent transparent orange;
+}
+
+/*Menu de navegación*/
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100vw;
+    margin: 0;
+    padding: 5px 5px;
+}
+
+.fa,
+.far,
+.fas {
+    font-family: "Font Awesome 5 Pro";
+    color:
+        orange;
+}
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 19px;
+    color: #c2c2c2;
+    transition: .5s ease;
+
+}
+
+.nav li.active {
+    border-bottom: 2px solid orange;
+}
+
+.menu li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu li.active a,
+.menu li:hover a {
+
+    color: orange;
+}
+
+.contenedor-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #ffffc7;
+    animation: bajar-subir 1s ease infinite;
+}
+
+.p1 {
     background: url(../img/foto2.jpg);
 }
-.p2{
+
+.p2 {
     background-image: url(../img/foto1.jpg);
-    
+
 }
-.p3{
+
+.s1 {
+    background-image: url(../img/s1.jpg);
+}
+
+.p3 {
     background-image: url(../img/foto3.jpg);
 }
 
-.contenedor{
+.s2 {
+    background-image: url(../img/s2.jpg);
+}
+
+.contenedor {
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
-
-.fondo{
-   background-image: no-repeat;
-   background-image: fixed;
-   background-image: center;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
+.fondo {
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-.principal{
+
+.principal {
+    font-family: 'Monoton', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 125px;
     color: white;
 }
-.descrip{
-    
+
+.descrip {
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.desc{
+
+.desc {
+    font-family: 'Krona One', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 50vw;
+    text-transform: uppercase;
+    font-size: 50px;
     text-align: center;
-    color: white;
+    color: #ffffc7;
     text-align: center;
 }
 
 /* Segunda pagina fullpage */
 
-.contenedor-p2{
+.contenedor-p2 {
     height: 100vh;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60% 1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 0px; 
+    grid-row-gap: 0px;
 }
-.descrip-p2{
-       grid-area: 2 / 1 / 3 / 2;
-       display: flex;
-       align-items: center;
-       justify-content: center;
+
+.descrip-p2 {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.desc-p2{
-    
+
+.desc-p2 {
     width: 100vw;
     text-align: center;
     font-size: 150px;
     background-color: white;
 }
+
+.p-text {
+    background-color: white;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.info-serch {
+    align-self: flex-end;
+    width: 100vw;
+}
+
+.contenedorp2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    align-content: flex-end;
+}
+
+.mokaps {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.derecha {
+    width: 200px;
+    height: 200px;
+}
+
+.izquiera {
+    width: 200px;
+    height: 200px;
+}
+
+/* FOOTER */
+
+.p3 .social-btns {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 50px;
+}
+
+.p3 .social-btns a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    color: #303130;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+
+}
+
+.p3 .facebook i {
+    color: #3b5998;
+}
+
+.p3 .twitter i {
+    color: #1da1f2;
+}
+
+.p3 .insta i {
+    color: #c13584;
+}
+
+
+/* .p3 .facebook:hover {background: #3b5998;}
+.p3 .twitter:hover {background: #1da1f2;}
+.p3 .insta:hover {background: #c13584;} */
+
+.p3 .facebook:hover i {
+    color: white;
+}
+
+.p3 .twitter:hover i {
+    color: white;
+}
+
+.p3 .insta:hover i {
+    color: white;
+}
+
+.p3 .txt-footer {
+    font-family: 'Krona One', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    color: #ffffc7;
+
+
+}
+
+/* 
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100vw;
+    padding: 20px;
+  }
+   */
