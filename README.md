@@ -5,13 +5,13 @@ Se ha utilizado la librería FullPages.js creada por Alvaro Trigo, CSS y HTML.
 https://github.com/alvarotrigo/fullPage.js/
 
 
-#CAPTURAS DE PANTALLA DE LA WEB
+# CAPTURAS DE PANTALLA DE LA WEB
 
+ ![Image](https://github.com/davidmorenocapel/GeeksHubs-P2---Website-2.0/blob/master/1.jpg) 
+ 
+ ![Image](https://github.com/davidmorenocapel/GeeksHubs-P2---Website-2.0/blob/master/2.jpg) 
 
-[IMAGEN]
-[IMAGEN]
-
-#HERRAMIENTAS 
+# HERRAMIENTAS 
 
 - IDE (NO existe preferencia)
 - Navegador ( No existe preferencia)
